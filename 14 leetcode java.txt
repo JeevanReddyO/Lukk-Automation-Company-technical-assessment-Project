@@ -1,0 +1,406 @@
+70
+
+class Solution {
+    public int climbStairs(int n) {
+        if (n <= 2) return n;
+
+        int first = 1;
+        int second = 2;
+
+        for (int i = 3; i <= n; i++) {
+            int third = first + second;
+            first = second;
+            second = third;
+        }
+
+        return second;
+    }
+}
+
+
+
+55
+
+class Solution {
+    public boolean canJump(int[] nums) {
+        int maxReach = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (i > maxReach)
+                return false;
+
+            maxReach = Math.max(maxReach, i + nums[i]);
+        }
+
+        return true;
+    }
+}
+
+
+
+
+200
+
+class Solution {
+
+    public int numIslands(char[][] grid) {
+        int count = 0;
+
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+
+                if (grid[i][j] == '1') {
+                    dfs(grid, i, j);
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+
+    private void dfs(char[][] grid, int i, int j) {
+
+        if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length
+                || grid[i][j] == '0')
+            return;
+
+        grid[i][j] = '0';
+
+        dfs(grid, i + 1, j);
+        dfs(grid, i - 1, j);
+        dfs(grid, i, j + 1);
+        dfs(grid, i, j - 1);
+    }
+}
+
+
+
+73
+
+class Solution {
+
+    public void setZeroes(int[][] matrix) {
+
+        boolean firstRowZero = false;
+        boolean firstColZero = false;
+
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        for (int i = 0; i < rows; i++) {
+            if (matrix[i][0] == 0)
+                firstColZero = true;
+        }
+
+        for (int j = 0; j < cols; j++) {
+            if (matrix[0][j] == 0)
+                firstRowZero = true;
+        }
+
+        for (int i = 1; i < rows; i++) {
+            for (int j = 1; j < cols; j++) {
+
+                if (matrix[i][j] == 0) {
+                    matrix[i][0] = 0;
+                    matrix[0][j] = 0;
+                }
+            }
+        }
+
+        for (int i = 1; i < rows; i++) {
+            for (int j = 1; j < cols; j++) {
+
+                if (matrix[i][0] == 0 || matrix[0][j] == 0)
+                    matrix[i][j] = 0;
+            }
+        }
+
+        if (firstRowZero) {
+            for (int j = 0; j < cols; j++)
+                matrix[0][j] = 0;
+        }
+
+        if (firstColZero) {
+            for (int i = 0; i < rows; i++)
+                matrix[i][0] = 0;
+        }
+    }
+}
+
+
+49
+
+
+import java.util.*;
+
+class Solution {
+
+    public List<List<String>> groupAnagrams(String[] strs) {
+
+        Map<String, List<String>> map = new HashMap<>();
+
+        for (String str : strs) {
+
+            char[] chars = str.toCharArray();
+            Arrays.sort(chars);
+
+            String key = new String(chars);
+
+            map.putIfAbsent(key, new ArrayList<>());
+            map.get(key).add(str);
+        }
+
+        return new ArrayList<>(map.values());
+    }
+}
+
+
+
+9
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        if (x < 0 || (x % 10 == 0 && x != 0))
+            return false;
+
+        int reversed = 0;
+
+        while (x > reversed) {
+            reversed = reversed * 10 + x % 10;
+            x /= 10;
+        }
+
+        return x == reversed || x == reversed / 10;
+    }
+}
+
+
+2469
+
+
+class Solution {
+    public double[] convertTemperature(double celsius) {
+        return new double[]{
+            celsius + 273.15,
+            celsius * 1.80 + 32.00
+        };
+    }
+}
+
+
+151
+
+class Solution {
+    public String reverseWords(String s) {
+        String[] words = s.trim().split("\\s+");
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = words.length - 1; i >= 0; i--) {
+            sb.append(words[i]);
+            if (i != 0)
+                sb.append(" ");
+        }
+
+        return sb.toString();
+    }
+}
+
+
+125
+
+class Solution {
+    public boolean isPalindrome(String s) {
+        int left = 0;
+        int right = s.length() - 1;
+
+        while (left < right) {
+
+            while (left < right && !Character.isLetterOrDigit(s.charAt(left)))
+                left++;
+
+            while (left < right && !Character.isLetterOrDigit(s.charAt(right)))
+                right--;
+
+            if (Character.toLowerCase(s.charAt(left)) !=
+                Character.toLowerCase(s.charAt(right)))
+                return false;
+
+            left++;
+            right--;
+        }
+
+        return true;
+    }
+}
+
+
+189
+
+
+class Solution {
+    public void rotate(int[] nums, int k) {
+
+        k %= nums.length;
+
+        reverse(nums, 0, nums.length - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, nums.length - 1);
+    }
+
+    private void reverse(int[] nums, int left, int right) {
+        while (left < right) {
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+
+            left++;
+            right--;
+        }
+    }
+}
+
+
+242
+
+
+class Solution {
+    public boolean isAnagram(String s, String t) {
+
+        if (s.length() != t.length())
+            return false;
+
+        int[] count = new int[26];
+
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i) - 'a']++;
+            count[t.charAt(i) - 'a']--;
+        }
+
+        for (int num : count) {
+            if (num != 0)
+                return false;
+        }
+
+        return true;
+    }
+}
+
+
+20
+
+import java.util.*;
+
+class Solution {
+    public boolean isValid(String s) {
+
+        Stack<Character> stack = new Stack<>();
+
+        for (char ch : s.toCharArray()) {
+
+            if (ch == '(' || ch == '{' || ch == '[') {
+                stack.push(ch);
+            } else {
+
+                if (stack.isEmpty())
+                    return false;
+
+                char top = stack.pop();
+
+                if ((ch == ')' && top != '(') ||
+                    (ch == '}' && top != '{') ||
+                    (ch == ']' && top != '['))
+                    return false;
+            }
+        }
+
+        return stack.isEmpty();
+    }
+}
+
+
+21
+
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) {
+ *         this.val = val;
+ *         this.next = next;
+ *     }
+ * }
+ */
+
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+
+        ListNode dummy = new ListNode(-1);
+        ListNode current = dummy;
+
+        while (list1 != null && list2 != null) {
+
+            if (list1.val <= list2.val) {
+                current.next = list1;
+                list1 = list1.next;
+            } else {
+                current.next = list2;
+                list2 = list2.next;
+            }
+
+            current = current.next;
+        }
+
+        if (list1 != null)
+            current.next = list1;
+
+        if (list2 != null)
+            current.next = list2;
+
+        return dummy.next;
+    }
+}
+
+
+
+700
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+
+class Solution {
+    public TreeNode searchBST(TreeNode root, int val) {
+
+        while (root != null) {
+
+            if (root.val == val)
+                return root;
+
+            if (val < root.val)
+                root = root.left;
+            else
+                root = root.right;
+        }
+
+        return null;
+    }
+}
+
