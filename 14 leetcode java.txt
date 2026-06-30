@@ -1,3 +1,12 @@
+192.*;*.ultimatix.*;speed*;172.*;10.*;tcsglobalhelpdesk;infobase;learning.*;sci.qinta.*;*pilot-globalhelpdesk*;*mycp*;news.tcs.com;*INM*.TCS.COM;*IND*.TCS.COM;*INC*.TCS.COM;*INH*.TCS.COM;*INB*.TCS.COM;*INK*.tcs.com;us*.tcs.*;uk*.tcs.*;content3.*;buzz.*;*recruitment*;*careers*;sps*;ftc*;157*;tw.tcs.com;chat.tcs.com;edge.tcs.com;inchnveloa.tcs.com;*.india.tcs.com;ideastorm.tcs.com;*ISISD.*;securityportal.tcs.com;meeting.tcs.com;*video.tcs.com;mscommunity*.tcs.com;search.tdcustagweb.tcs.com;Web2labs.tcs.com;academia.tcs.com;photo.tcs.com;*tcs-helpdesk*;ilpcms.tcs.com;campustaprocess.tcs.com;*tcsbas.tcsbpo*;globalmeet.tcs.com;bpoonline.tcs.com;*hrservicesonline.com*;*customersurvey.tcs.com*;mstream*;*.BPO.TCS.COM*;avpn1.npv.gm.com;g2v.visteon.com;icenter.digitalops.net;sslvpn.terremark.com;cua.sslvpn.terremark.com;access.petco.com;stprd.pscufs.com;gbamsuat.tcs.com;gbams.tcs.com;webmail.tcs.com;vmsprocurement.tcs.com;vms.tcs.com;boduat.tcs.com;*.usaa.com;conference1.tcs.com;sametime.tcssut.com;meeting1.tcssut.com;proxy.tcssut.com;media.tcssut.com;i-asuhplabvm18.tcsasuhplab.com;meetingav.tcs.com;avchat.tcs.com;streflector.tcssut.com;colosseum.tcs.com;fit4life.tcs.com;lifeline.tcs.com;dominoconnect.tcs.com;tqas.tcs.com;isprojects.tcs.com;irm.tcs.com;irmdr.tcs.com;vlabschennai.tcs.com;eventsdev.tcs.com;conference.tcs.com;conference1.tcs.com;webchat.tcs.com;mchat.tcs.com;*.tcs.com
+
+
+
+
+
+
+
+
 70
 
 class Solution {
