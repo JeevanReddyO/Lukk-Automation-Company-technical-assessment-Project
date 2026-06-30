@@ -1,0 +1,590 @@
+"C:\Program Files\Java\jdk-23\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.3\lib\idea_rt.jar=56331" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath "C:\Users\JEEVAN REDDY\OneDrive\Desktop\Event_Ticket_booking\out\production\Event_Ticket_booking" Main
+
+======================================
+     EVENT TICKET BOOKING SYSTEM
+======================================
+1. Register
+2. Login
+3. Exit
+Enter Choice: 1
+
+========== USER REGISTRATION ==========
+Enter Username: jeevanreddy
+Enter Password: 123456
+
+Select Role
+1. Admin
+2. Event Manager
+3. Consumer
+Enter Choice: 1
+Admin Registered Successfully.
+
+======================================
+     EVENT TICKET BOOKING SYSTEM
+======================================
+1. Register
+2. Login
+3. Exit
+Enter Choice: 2
+
+========== LOGIN ==========
+Enter Username: jeevanreddy
+Enter Password: 123456
+
+Login Successful!
+Welcome, jeevanreddy
+Role : Admin
+
+========== ADMIN MENU ==========
+1. Add Location
+2. View Locations
+3. Approve Event
+4. Reject Event
+5. View Pending Events
+6. Monitor Seat Capacity
+7. Logout
+Enter Choice: 7
+Admin Logged Out Successfully.
+
+======================================
+     EVENT TICKET BOOKING SYSTEM
+======================================
+1. Register
+2. Login
+3. Exit
+Enter Choice: 1
+
+========== USER REGISTRATION ==========
+Enter Username: syed akram
+Enter Password: 987321
+
+Select Role
+1. Admin
+2. Event Manager
+3. Consumer
+Enter Choice: 2
+Event Manager Registered Successfully.
+
+======================================
+     EVENT TICKET BOOKING SYSTEM
+======================================
+1. Register
+2. Login
+3. Exit
+Enter Choice: 2
+
+========== LOGIN ==========
+Enter Username: syed akram
+Enter Password: 987321
+
+Login Successful!
+Welcome, syed akram
+Role : Event Manager
+
+======= EVENT MANAGER MENU =======
+1. Create Event
+2. View My Events
+3. Edit Event
+4. Send Event For Approval
+5. Cancel Event
+6. Logout
+Enter Choice: 1
+
+========== CREATE EVENT ==========
+Enter Event Name: new concert
+Enter Event Date (dd-mm-yyyy): 04072026
+Enter Ticket Price: 1299
+Enter Number of Seats: 200
+
+Available Locations
+1 - Hyderabad Convention Centre
+2 - Hitex Exhibition Center
+3 - Gachibowli Indoor Stadium
+4 - Jawaharlal Nehru Indoor Stadium
+5 - YMCA Grounds, Nandanam
+6 - Chennai Trade Centre
+7 - Jio World Garden
+8 - MMRDA Grounds
+9 - NSCI Dome
+10 - Sunburn Arena
+11 - Bambolim Athletic Stadium
+12 - Dr. Shyama Prasad Mukherjee Indoor Stadium
+13 - Campal Grounds
+14 - Leisure Valley Ground
+15 - DLF CyberHub Amphitheatre
+16 - Palace Grounds
+17 - KTPO Exhibition Centre
+18 - Embassy International Riding School
+Enter Location ID: 8
+Event Created Successfully.
+
+======= EVENT MANAGER MENU =======
+1. Create Event
+2. View My Events
+3. Edit Event
+4. Send Event For Approval
+5. Cancel Event
+6. Logout
+Enter Choice: 2
+
+========== MY EVENTS ==========
+
+Event ID : 2
+Event Name : new concert
+Event Date : 04072026
+Ticket Price : ₹1299.0
+Available Seats : 200
+Location : MMRDA Grounds
+Status : Pending
+Manager ID : 5
+
+======= EVENT MANAGER MENU =======
+1. Create Event
+2. View My Events
+3. Edit Event
+4. Send Event For Approval
+5. Cancel Event
+6. Logout
+Enter Choice: 4
+Enter Event ID: 2
+Event Sent For Approval Successfully.
+
+======= EVENT MANAGER MENU =======
+1. Create Event
+2. View My Events
+3. Edit Event
+4. Send Event For Approval
+5. Cancel Event
+6. Logout
+Enter Choice: 6
+Event Manager Logged Out Successfully.
+
+======================================
+     EVENT TICKET BOOKING SYSTEM
+======================================
+1. Register
+2. Login
+3. Exit
+Enter Choice: 2
+
+========== LOGIN ==========
+Enter Username: jeevanreddy
+Enter Password: 123456
+
+Login Successful!
+Welcome, jeevanreddy
+Role : Admin
+
+========== ADMIN MENU ==========
+1. Add Location
+2. View Locations
+3. Approve Event
+4. Reject Event
+5. View Pending Events
+6. Monitor Seat Capacity
+7. Logout
+Enter Choice: 3
+Enter Event ID to Approve: 2
+Event Approved Successfully.
+
+========== ADMIN MENU ==========
+1. Add Location
+2. View Locations
+3. Approve Event
+4. Reject Event
+5. View Pending Events
+6. Monitor Seat Capacity
+7. Logout
+Enter Choice: 2
+
+========== LOCATIONS ==========
+
+========== LOCATION ==========
+Location ID      : 1
+Location Name    : Hyderabad Convention Centre
+Address          : Hyderabad
+Seat Capacity    : 5000
+==============================
+
+========== LOCATION ==========
+Location ID      : 2
+Location Name    : Hitex Exhibition Center
+Address          : Hyderabad
+Seat Capacity    : 10000
+==============================
+
+========== LOCATION ==========
+Location ID      : 3
+Location Name    : Gachibowli Indoor Stadium
+Address          : Hyderabad
+Seat Capacity    : 7500
+==============================
+
+========== LOCATION ==========
+Location ID      : 4
+Location Name    : Jawaharlal Nehru Indoor Stadium
+Address          : Chennai
+Seat Capacity    : 8000
+==============================
+
+========== LOCATION ==========
+Location ID      : 5
+Location Name    : YMCA Grounds, Nandanam
+Address          : Chennai
+Seat Capacity    : 12000
+==============================
+
+========== LOCATION ==========
+Location ID      : 6
+Location Name    : Chennai Trade Centre
+Address          : Chennai
+Seat Capacity    : 6000
+==============================
+
+========== LOCATION ==========
+Location ID      : 7
+Location Name    : Jio World Garden
+Address          : Mumbai
+Seat Capacity    : 15000
+==============================
+
+========== LOCATION ==========
+Location ID      : 8
+Location Name    : MMRDA Grounds
+Address          : Mumbai
+Seat Capacity    : 20000
+==============================
+
+========== LOCATION ==========
+Location ID      : 9
+Location Name    : NSCI Dome
+Address          : Mumbai
+Seat Capacity    : 9000
+==============================
+
+========== LOCATION ==========
+Location ID      : 10
+Location Name    : Sunburn Arena
+Address          : Goa
+Seat Capacity    : 30000
+==============================
+
+========== LOCATION ==========
+Location ID      : 11
+Location Name    : Bambolim Athletic Stadium
+Address          : Goa
+Seat Capacity    : 12000
+==============================
+
+========== LOCATION ==========
+Location ID      : 12
+Location Name    : Dr. Shyama Prasad Mukherjee Indoor Stadium
+Address          : Goa
+Seat Capacity    : 5000
+==============================
+
+========== LOCATION ==========
+Location ID      : 13
+Location Name    : Campal Grounds
+Address          : Goa
+Seat Capacity    : 10000
+==============================
+
+========== LOCATION ==========
+Location ID      : 14
+Location Name    : Leisure Valley Ground
+Address          : Gurugram
+Seat Capacity    : 12000
+==============================
+
+========== LOCATION ==========
+Location ID      : 15
+Location Name    : DLF CyberHub Amphitheatre
+Address          : Gurugram
+Seat Capacity    : 4000
+==============================
+
+========== LOCATION ==========
+Location ID      : 16
+Location Name    : Palace Grounds
+Address          : Bengaluru
+Seat Capacity    : 25000
+==============================
+
+========== LOCATION ==========
+Location ID      : 17
+Location Name    : KTPO Exhibition Centre
+Address          : Bengaluru
+Seat Capacity    : 15000
+==============================
+
+========== LOCATION ==========
+Location ID      : 18
+Location Name    : Embassy International Riding School
+Address          : Bengaluru
+Seat Capacity    : 10000
+==============================
+
+========== ADMIN MENU ==========
+1. Add Location
+2. View Locations
+3. Approve Event
+4. Reject Event
+5. View Pending Events
+6. Monitor Seat Capacity
+7. Logout
+Enter Choice: 6
+
+========== LOCATION CAPACITY ==========
+Location ID   : 1
+Location Name : Hyderabad Convention Centre
+Capacity      : 5000
+---------------------------------------
+Location ID   : 2
+Location Name : Hitex Exhibition Center
+Capacity      : 10000
+---------------------------------------
+Location ID   : 3
+Location Name : Gachibowli Indoor Stadium
+Capacity      : 7500
+---------------------------------------
+Location ID   : 4
+Location Name : Jawaharlal Nehru Indoor Stadium
+Capacity      : 8000
+---------------------------------------
+Location ID   : 5
+Location Name : YMCA Grounds, Nandanam
+Capacity      : 12000
+---------------------------------------
+Location ID   : 6
+Location Name : Chennai Trade Centre
+Capacity      : 6000
+---------------------------------------
+Location ID   : 7
+Location Name : Jio World Garden
+Capacity      : 15000
+---------------------------------------
+Location ID   : 8
+Location Name : MMRDA Grounds
+Capacity      : 20000
+---------------------------------------
+Location ID   : 9
+Location Name : NSCI Dome
+Capacity      : 9000
+---------------------------------------
+Location ID   : 10
+Location Name : Sunburn Arena
+Capacity      : 30000
+---------------------------------------
+Location ID   : 11
+Location Name : Bambolim Athletic Stadium
+Capacity      : 12000
+---------------------------------------
+Location ID   : 12
+Location Name : Dr. Shyama Prasad Mukherjee Indoor Stadium
+Capacity      : 5000
+---------------------------------------
+Location ID   : 13
+Location Name : Campal Grounds
+Capacity      : 10000
+---------------------------------------
+Location ID   : 14
+Location Name : Leisure Valley Ground
+Capacity      : 12000
+---------------------------------------
+Location ID   : 15
+Location Name : DLF CyberHub Amphitheatre
+Capacity      : 4000
+---------------------------------------
+Location ID   : 16
+Location Name : Palace Grounds
+Capacity      : 25000
+---------------------------------------
+Location ID   : 17
+Location Name : KTPO Exhibition Centre
+Capacity      : 15000
+---------------------------------------
+Location ID   : 18
+Location Name : Embassy International Riding School
+Capacity      : 10000
+---------------------------------------
+
+========== ADMIN MENU ==========
+1. Add Location
+2. View Locations
+3. Approve Event
+4. Reject Event
+5. View Pending Events
+6. Monitor Seat Capacity
+7. Logout
+Enter Choice: 7
+Admin Logged Out Successfully.
+
+======================================
+     EVENT TICKET BOOKING SYSTEM
+======================================
+1. Register
+2. Login
+3. Exit
+Enter Choice: 1
+
+========== USER REGISTRATION ==========
+Enter Username: gokul
+Enter Password: 456123
+
+Select Role
+1. Admin
+2. Event Manager
+3. Consumer
+Enter Choice: 3
+Consumer Registered Successfully.
+
+======================================
+     EVENT TICKET BOOKING SYSTEM
+======================================
+1. Register
+2. Login
+3. Exit
+Enter Choice: 2
+
+========== LOGIN ==========
+Enter Username: gokul
+Enter Password: 456123
+
+Login Successful!
+Welcome, gokul
+Role : Consumer
+
+========== CONSUMER MENU ==========
+1. View Approved Events
+2. Book Ticket
+3. View My Bookings
+4. Make Payment
+5. Apply Coupon
+6. Logout
+Enter Choice: 1
+
+========== APPROVED EVENTS ==========
+
+Event ID : 1
+Event Name : Java Tech Fest
+Event Date : 15-08-2026
+Ticket Price : ₹500.0
+Available Seats : 300
+Location : Hyderabad Convention Centre
+Status : Approved
+Manager ID : 2
+--------------------------------
+
+Event ID : 2
+Event Name : new concert
+Event Date : 04072026
+Ticket Price : ₹1299.0
+Available Seats : 200
+Location : MMRDA Grounds
+Status : Approved
+Manager ID : 5
+--------------------------------
+
+========== CONSUMER MENU ==========
+1. View Approved Events
+2. Book Ticket
+3. View My Bookings
+4. Make Payment
+5. Apply Coupon
+6. Logout
+Enter Choice: 2
+Enter Event ID: 2
+
+Enter Number of Tickets: 2
+
+Booking Successful.
+Booking ID : 1
+Amount To Pay : ₹2598.0
+
+========== CONSUMER MENU ==========
+1. View Approved Events
+2. Book Ticket
+3. View My Bookings
+4. Make Payment
+5. Apply Coupon
+6. Logout
+Enter Choice: 4
+Enter Booking ID: 1
+
+Payment Successful.
+
+========== E-RECEIPT ==========
+Booking ID      : 1
+Consumer ID     : 6
+Event ID        : 2
+Tickets         : 2
+Amount Paid     : ₹2598.0
+Payment Status  : Paid
+===============================
+
+========== CONSUMER MENU ==========
+1. View Approved Events
+2. Book Ticket
+3. View My Bookings
+4. Make Payment
+5. Apply Coupon
+6. Logout
+Enter Choice: 3
+
+========== MY BOOKINGS ==========
+
+Booking ID : 1
+Consumer ID : 6
+Event ID : 2
+Tickets Booked : 2
+Total Amount : ₹2598.0
+Payment Status : Paid
+--------------------------------
+
+========== CONSUMER MENU ==========
+1. View Approved Events
+2. Book Ticket
+3. View My Bookings
+4. Make Payment
+5. Apply Coupon
+6. Logout
+Enter Choice: 6
+Consumer Logged Out Successfully.
+
+======================================
+     EVENT TICKET BOOKING SYSTEM
+======================================
+1. Register
+2. Login
+3. Exit
+Enter Choice: 2
+
+========== LOGIN ==========
+Enter Username: syed akram
+Enter Password: 987321
+
+Login Successful!
+Welcome, syed akram
+Role : Event Manager
+
+======= EVENT MANAGER MENU =======
+1. Create Event
+2. View My Events
+3. Edit Event
+4. Send Event For Approval
+5. Cancel Event
+6. Logout
+Enter Choice: 5
+Enter Event ID: 2
+Event Cancelled Successfully.
+Compensation Coupons Generated.
+
+======= EVENT MANAGER MENU =======
+1. Create Event
+2. View My Events
+3. Edit Event
+4. Send Event For Approval
+5. Cancel Event
+6. Logout
+Enter Choice: 
